@@ -1,0 +1,10 @@
+Testing JigsawStack module with real API key
+Vectorizing text...
+Text vector (first 5 values): [0.024168812 0.0019911805 -0.0571568 0.013160101 0.0023459313]
+Text vector dimension: 768
+Vectorizing image...
+Image vector (first 5 values): [-0.053592477 0.012322302 0.012696167 -0.047702186 -0.036593042]
+Image vector dimension: 768
+Vectorizing object...
+Object vectorization returned an empty vector
+Test completed successfully!

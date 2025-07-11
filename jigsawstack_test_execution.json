@@ -1,0 +1,70 @@
+{
+	"testExecution": {
+		"command": "go run main.go",
+		"timestamp": "2024-05-14T00:00:00Z",
+		"rawOutput": [
+			"Testing JigsawStack module with real API key",
+			"Vectorizing text...",
+			"INFO[0000] Making API request to: https://api.jigsawstack.com/v1/embedding",
+			"INFO[0000] Request headers: Content-Type: application/json, x-api-key: sk_74a5e5c... (truncated)",
+			"INFO[0000] Request body: {\"text\":\"Artificial intelligence is transforming the world today\",\"type\":\"text\"}",
+			"Text vector (first 5 values): [0.024168812 0.0019911805 -0.0571568 0.013160101 0.0023459313]",
+			"Text vector dimension: 768",
+			"Vectorizing image...",
+			"INFO[0000] Making API request to: https://api.jigsawstack.com/v1/embedding",
+			"INFO[0000] Request headers: Content-Type: application/json, x-api-key: sk_74a5e5c... (truncated)",
+			"INFO[0000] Request body: {\"url\":\"https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg\",\"type\":\"image\"}",
+			"Image vector (first 5 values): [-0.053592477 0.012322302 0.012696167 -0.047702186 -0.036593042]",
+			"Image vector dimension: 768",
+			"Vectorizing object...",
+			"Object vectorization returned an empty vector",
+			"Test completed successfully!"
+		]
+	},
+	"testResults": {
+		"configuration": {
+			"apiEndpoint": "https://api.jigsawstack.com/v1/embedding",
+			"baseURL": "https://api.jigsawstack.com"
+		},
+		"textVectorization": {
+			"input": "Artificial intelligence is transforming the world today",
+			"requestBody": {
+				"text": "Artificial intelligence is transforming the world today",
+				"type": "text"
+			},
+			"result": "success",
+			"vectorSample": [
+				0.024168812, 0.0019911805, -0.0571568, 0.013160101, 0.0023459313
+			],
+			"vectorDimension": 768
+		},
+		"imageVectorization": {
+			"inputURL": "https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg",
+			"requestBody": {
+				"url": "https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg",
+				"type": "image"
+			},
+			"result": "success",
+			"vectorSample": [
+				-0.053592477, 0.012322302, 0.012696167, -0.047702186, -0.036593042
+			],
+			"vectorDimension": 768
+		},
+		"objectVectorization": {
+			"inputObject": {
+				"class": "Test",
+				"properties": {
+					"text": "This is a test text",
+					"image": "https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg"
+				}
+			},
+			"result": "empty vector"
+		},
+		"summary": {
+			"status": "completed successfully",
+			"textVectorizationStatus": "working correctly",
+			"imageVectorizationStatus": "working correctly",
+			"objectVectorizationStatus": "needs further investigation"
+		}
+	}
+}

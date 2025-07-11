@@ -1,0 +1,16 @@
+Testing JigsawStack module with real API key
+time="2025-04-17T19:29:41-07:00" level=info msg="Making API request to: https://api.jigsawstack.com/v1/embedding"
+Vectorizing text...
+time="2025-04-17T19:29:41-07:00" level=info msg="Request headers: Content-Type: application/json, x-api-key: sk_74a5e5c... (truncated)"
+time="2025-04-17T19:29:41-07:00" level=info msg="Request body: {\"text\":\"Artificial intelligence is transforming the world today\",\"type\":\"text\"}"
+Text vector (first 5 values): [0.024168812 0.0019911805 -0.0571568 0.013160101 0.0023459313]
+time="2025-04-17T19:29:44-07:00" level=info msg="Making API request to: https://api.jigsawstack.com/v1/embedding"
+Text vector dimension: 768
+Vectorizing image...
+time="2025-04-17T19:29:44-07:00" level=info msg="Request headers: Content-Type: application/json, x-api-key: sk_74a5e5c... (truncated)"
+time="2025-04-17T19:29:44-07:00" level=info msg="Request body: {\"url\":\"https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg\",\"type\":\"image\"}"
+Image vector (first 5 values): [-0.053592477 0.012322302 0.012696167 -0.047702186 -0.036593042]
+Image vector dimension: 768
+Vectorizing object...
+Object vectorization returned an empty vector
+Test completed successfully!

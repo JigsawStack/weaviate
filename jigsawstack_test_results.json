@@ -1,0 +1,48 @@
+{
+	"testName": "JigsawStack Module Test",
+	"timestamp": "2024-05-14T00:00:00Z",
+	"configuration": {
+		"apiEndpoint": "https://api.jigsawstack.com/v1/embedding",
+		"baseURL": "https://api.jigsawstack.com"
+	},
+	"textVectorization": {
+		"input": "Artificial intelligence is transforming the world today",
+		"requestBody": {
+			"text": "Artificial intelligence is transforming the world today",
+			"type": "text"
+		},
+		"result": "success",
+		"vectorSample": [
+			0.024168812, 0.0019911805, -0.0571568, 0.013160101, 0.0023459313
+		],
+		"vectorDimension": 768
+	},
+	"imageVectorization": {
+		"inputURL": "https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg",
+		"requestBody": {
+			"url": "https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg",
+			"type": "image"
+		},
+		"result": "success",
+		"vectorSample": [
+			-0.053592477, 0.012322302, 0.012696167, -0.047702186, -0.036593042
+		],
+		"vectorDimension": 768
+	},
+	"objectVectorization": {
+		"inputObject": {
+			"class": "Test",
+			"properties": {
+				"text": "This is a test text",
+				"image": "https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg"
+			}
+		},
+		"result": "empty vector"
+	},
+	"summary": {
+		"status": "completed successfully",
+		"textVectorizationStatus": "working correctly",
+		"imageVectorizationStatus": "working correctly",
+		"objectVectorizationStatus": "needs further investigation"
+	}
+}

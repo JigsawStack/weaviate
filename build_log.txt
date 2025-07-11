@@ -1,0 +1,2 @@
+github.com/weaviate/weaviate/modules/multi2vec-jigsawstack/vectorizer
+github.com/weaviate/weaviate/modules/multi2vec-jigsawstack
